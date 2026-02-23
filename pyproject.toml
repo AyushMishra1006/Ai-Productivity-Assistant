@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ai-productivity-assistant"
+version = "0.1.0"
+description = "AI Productivity Assistant with FastAPI and Next.js"
+authors = ["Ayush Mishra"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "0.115.0"
+uvicorn = {version = "0.30.6", extras = ["standard"]}
+groq = "0.4.1"
+sqlalchemy = "2.0.35"
+pydantic = "2.7.1"
+pydantic-settings = "2.2.1"
+python-dotenv = "1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
