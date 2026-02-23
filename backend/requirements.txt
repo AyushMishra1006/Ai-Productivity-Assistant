@@ -1,6 +1,8 @@
-fastapi==0.87.0
-uvicorn[standard]==0.20.0
+fastapi==0.100.0
+uvicorn[standard]==0.23.0
 groq==0.4.1
 sqlalchemy==2.0.35
-pydantic==1.10.15
+pydantic==2.0.3
+pydantic-settings==2.0.3
 python-dotenv==1.0.1
+email-validator==2.0.0
