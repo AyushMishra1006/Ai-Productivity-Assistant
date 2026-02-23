@@ -37,4 +37,4 @@ class TodoOut(BaseModel):
     updated_at: str
 
     class Config:
-        from_attributes = True
+        orm_mode = True

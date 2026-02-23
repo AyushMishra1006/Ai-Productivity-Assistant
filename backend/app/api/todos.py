@@ -30,7 +30,7 @@ async def get_todo_by_id(todo_id: int, db: Session = Depends(get_db)):
 @router.post("", response_model=TodoOut)
 async def create_new_todo(todo: TodoCreate, db: Session = Depends(get_db)):
     """Create a new todo."""
-    return create_todo(db, todo.model_dump(exclude_none=True))
+    return create_todo(db, todo.dict(exclude_none=True))
 
 
 @router.patch("/{todo_id}", response_model=TodoOut)
@@ -38,7 +38,7 @@ async def update_todo_by_id(
     todo_id: int, todo_update: TodoUpdate, db: Session = Depends(get_db)
 ):
     """Update a todo."""
-    result = update_todo(db, todo_id, todo_update.model_dump(exclude_none=True))
+    result = update_todo(db, todo_id, todo_update.dict(exclude_none=True))
     if not result:
         raise HTTPException(status_code=404, detail="Todo not found")
     return result
