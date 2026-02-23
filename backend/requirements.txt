@@ -1,5 +1,5 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
+fastapi==0.87.0
+uvicorn[standard]==0.20.0
 groq==0.4.1
 sqlalchemy==2.0.35
 pydantic==1.10.15
