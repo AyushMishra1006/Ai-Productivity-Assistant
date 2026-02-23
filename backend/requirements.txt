@@ -2,6 +2,6 @@ fastapi==0.115.0
 uvicorn[standard]==0.30.6
 groq==0.4.1
 sqlalchemy==2.0.35
-pydantic==2.10.6
+pydantic==2.7.1
 pydantic-settings==2.2.1
 python-dotenv==1.0.1
