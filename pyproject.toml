@@ -3,6 +3,7 @@ name = "ai-productivity-assistant"
 version = "0.1.0"
 description = "AI Productivity Assistant with FastAPI and Next.js"
 authors = ["Ayush Mishra"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
